@@ -20,7 +20,7 @@
 
 /* common styles  */
 .section-heading {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   color: #000000;
 }
@@ -28,7 +28,7 @@
 .section-description {
   font-size: 18px;
   font-weight: 500;
-  color: #3e3e3e;
+  color: #3e3e3ec4;
 }
 
 .text-primary {
@@ -43,20 +43,85 @@
   border: none;
 }
 /* header styles */
-.header {
+/* .header {
   width: 1128px;
   margin: 0 auto;
-}
+} */
+
 /* banner-styles */
 .banner {
   display: flex;
   align-items: center;
-  gap: 130px;
+  /* justify-content: space-between; */
+  gap: 80px;
+  padding: 20px;
+  /* border: 2px solid green; */
+  margin-top: 140px;
+
+  max-width: 1128px;
+  margin: 0 auto;
 }
+
+.banner-heading {
+  font-size: 58px;
+  font-weight: 500;
+}
+
 .banner > div {
   width: 50%;
 }
-
 .banner img {
   width: 100%;
+}
+
+.banner-extra-info {
+  color: #434343;
+  margin-top: 30px;
+}
+
+/* responsive media query */
+
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+  .banner {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .banner-heading {
+    font-size: 25px;
+  }
+
+  .banner > div {
+    width: 100%;
+  }
+  .banner img {
+    width: 100%;
+  }
+}
+
+/* for tablet devices */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .banner {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+  .banner .banner-content {
+    width: 50%;
+  }
+  .banner-heading {
+    font-size: 40px;
+  }
+}
+
+/* for laptop devices */
+
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+  .banner {
+    gap: 10px;
+  }
+  .banner .banner-content {
+    width: 50%;
+  }
 }
