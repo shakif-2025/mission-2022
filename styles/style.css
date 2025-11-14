@@ -61,6 +61,11 @@
   color: #ffffff;
   border-radius: 7px;
   border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffad5a;
 }
 
 /* banner-styles */
@@ -269,7 +274,6 @@
 
 /*responsive for footer MOBILE  */
 .footer {
-  margin-bottom: 200px;
   padding: 5px 15px;
 }
 
