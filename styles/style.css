@@ -121,14 +121,14 @@
 .develop-section {
   margin-top: 86px;
   display: flex;
-  /* gap: 70px; */
+  gap: 70px;
   align-items: center;
 }
 .develop-section > div {
   width: 100%;
 }
 .develop-section img {
-  width: 80%;
+  width: 100%;
 }
 /* global community */
 .global-community {
@@ -139,12 +139,30 @@
   margin-top: 150px;
 }
 .global-community .section-content {
-  width: 60%;
+  width: 50%;
 }
 .global-community .global-community-image {
   width: 50%;
 }
 .global-community img {
+  width: 100%;
+}
+
+/* corona app section styles */
+.corona-app-card-container {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+}
+
+.corona-app-card-container .corona-app-image {
+  width: 50%;
+}
+
+.corona-app-card-container img {
+  width: 70%;
+}
+.corona-app-card-container .corona-app-content {
   width: 80%;
 }
 /** Responsive media query */
@@ -168,13 +186,13 @@
     width: 100%;
   }
 
-  /**Responsive mission-card-container  */
+  /**Responsive mission-card-container MOBILE  */
 
   .mission-card-container {
     flex-direction: column;
   }
 
-  /**Responsive DEVELOP section */
+  /**Responsive DEVELOP section MOBILE*/
   .develop-section {
     flex-direction: column;
     gap: 20px;
@@ -185,7 +203,7 @@
     width: 100%;
   }
 
-  /**Responsive global-community section */
+  /**Responsive global-community section MOBILE*/
   .global-community {
     flex-direction: column-reverse;
     text-align: center;
@@ -200,6 +218,24 @@
     width: 100%;
   }
   .global-community img {
+    width: 100%;
+  }
+
+  /**Responsive corona app section MOBILE*/
+  .corona-app-card-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+
+  .corona-app-card-container .corona-app-image {
+    width: 100%;
+  }
+
+  .corona-app-card-container img {
     width: 100%;
   }
 }
@@ -237,8 +273,13 @@
   .banner,
   .mission-card-container,
   .develop-section-container,
-  .global-community-container {
+  .global-community-container,
+  .corona-app-container {
     width: 1128px;
     margin: 0 auto;
+  }
+
+  hr {
+    display: none;
   }
 }
