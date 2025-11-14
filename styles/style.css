@@ -6,6 +6,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
 .font-poppins {
   font-family: "Poppins", sans-serif;
 }
@@ -17,7 +24,9 @@
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
-
+.font-lobster {
+  font-family: "Lobster", sans-serif;
+}
 /* common styles  */
 .hidden {
   display: none;
@@ -37,7 +46,7 @@
   color: #333333;
 }
 .section-description {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: #3e3e3ec4;
 }
@@ -152,6 +161,7 @@
 .corona-app-card-container {
   display: flex;
   gap: 160px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -160,10 +170,26 @@
 }
 
 .corona-app-card-container img {
+  padding: 80px 690px 80px 100px;
   width: 70%;
 }
 .corona-app-card-container .corona-app-content {
   width: 80%;
+}
+
+/* main end */
+
+.footer {
+  padding: 25px 50px;
+  background-color: #13103a;
+  margin-top: 50px;
+}
+
+.footer .gray-300 {
+  color: rgba(217, 219, 225, 1);
+}
+.footer .red {
+  color: #ff5959;
 }
 /** Responsive media query */
 @media screen and (max-width: 576px) {
@@ -231,13 +257,24 @@
     font-size: 26px;
   }
 
-  .corona-app-card-container .corona-app-image {
+  /* .corona-app-card-container .corona-app-image {
     width: 100%;
-  }
+  } */
 
   .corona-app-card-container img {
     width: 100%;
+    padding: 10px;
   }
+}
+
+/*  */
+.footer {
+  margin-bottom: 200px;
+  padding: 5px 15px;
+}
+
+.footer .section-heading2 {
+  font-size: 25px;
 }
 
 /**Responsive for tablet devices banner */
