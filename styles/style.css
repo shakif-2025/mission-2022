@@ -19,8 +19,15 @@
 }
 
 /* common styles  */
+.hidden {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
 .section-heading {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 700;
   color: #000000;
 }
@@ -42,24 +49,17 @@
   border-radius: 5px;
   border: none;
 }
-/* header styles */
-/* .header {
-  width: 1128px;
-  margin: 0 auto;
-} */
 
 /* banner-styles */
 .banner {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-evenly;
   gap: 80px;
   padding: 20px;
-  /* border: 2px solid green; */
-  margin-top: 140px;
 
-  max-width: 1128px;
-  margin: 0 auto;
+  /* width: 1128px;
+  margin: 0 auto; */
 }
 
 .banner-heading {
@@ -79,49 +79,97 @@
   margin-top: 30px;
 }
 
-/* responsive media query */
+/* main  */
 
-/* for mobile devices */
+/* my mission styles  */
+.mission-container {
+}
+.mission-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.mission-card {
+  background-color: rgba(79, 157, 166, 0.1);
+  width: 340px;
+  height: 320px;
+  border-radius: 26px;
+  padding: 40px 30px;
+}
+
+.mission-card p {
+  margin-bottom: -20px;
+}
+#card2-bg {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+#card3-bg {
+  background-color: #fff4d6;
+}
+.mission-card h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.mission-card img {
+  width: 140px;
+}
+
+/** Responsive media query */
 @media screen and (max-width: 576px) {
   .banner {
     flex-direction: column;
+    justify-content: center;
     gap: 5px;
     margin-top: 10px;
   }
-
+  .banner .banner-content {
+    width: 100%;
+  }
   .banner-heading {
     font-size: 25px;
   }
-
-  .banner > div {
+  .banner .banner-profile-pic {
     width: 100%;
   }
   .banner img {
     width: 100%;
   }
+
+  /* mission-card-container  */
 }
 
-/* for tablet devices */
+/* for tablet devices banner */
 @media screen and (min-width: 577px) and (max-width: 991px) {
   .banner {
     /* flex-direction: column; */
     gap: 10px;
   }
+
   .banner .banner-content {
     width: 50%;
   }
+
   .banner-heading {
     font-size: 40px;
   }
 }
 
-/* for laptop devices */
+/* for laptop devices banner*/
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
   .banner {
     gap: 10px;
   }
+
   .banner .banner-content {
     width: 50%;
+  }
+}
+
+/* for desktop */
+@media screen and (min-width: 1401px) {
+  .banner {
+    width: 1128px;
+    margin: 0 auto;
   }
 }
