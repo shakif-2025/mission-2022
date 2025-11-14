@@ -257,9 +257,9 @@
     font-size: 26px;
   }
 
-  /* .corona-app-card-container .corona-app-image {
+  .corona-app-card-container .corona-app-image {
     width: 100%;
-  } */
+  }
 
   .corona-app-card-container img {
     width: 100%;
@@ -267,7 +267,7 @@
   }
 }
 
-/*  */
+/*responsive for footer MOBILE  */
 .footer {
   margin-bottom: 200px;
   padding: 5px 15px;
@@ -311,7 +311,8 @@
   .mission-card-container,
   .develop-section-container,
   .global-community-container,
-  .corona-app-container {
+  .corona-app-container,
+  .footer {
     width: 1128px;
     margin: 0 auto;
   }
